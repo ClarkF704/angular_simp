@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1>Home</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+        <h3>Fetched Data!</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <ul *ngIf="users">
+                <li *ngFor="let user of users.data">
+                    <p><span class="namer">{{user.name}}</span> was born in <span class="year">{{user.year}}</span></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
